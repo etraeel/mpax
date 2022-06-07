@@ -4,7 +4,7 @@
 /public/pma
 /public/js
 /storage/*.key
-/vendor
+#/vendor
 /.idea
 /storage/messenger-responses.json
 

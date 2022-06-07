@@ -1,0 +1,53 @@
+{
+    "name": "rtippin/messenger-bots",
+    "description": "Messenger Bots Addon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Tippin",
+            "email": "tippindev@gmail.com",
+            "homepage": "https://tippindev.com"
+        }
+    ],
+    "homepage": "https://github.com/rtippin/messenger-bots",
+    "keywords": [
+        "Laravel",
+        "Messenger",
+        "Faker"
+    ],
+    "require": {
+        "php": "^8.0.2|^8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "rtippin/messenger": "^1.20"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "RTippin\\MessengerBots\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RTippin\\MessengerBots\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RTippin\\MessengerBots\\MessengerBotsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testsuite feature"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,53 @@
+{
+    "name": "rtippin/janus-client",
+    "description": "Janus Gateway Client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Tippin",
+            "email": "tippindev@gmail.com",
+            "homepage": "https://tippindev.com"
+        }
+    ],
+    "homepage": "https://github.com/rtippin/janus-client",
+    "keywords": [
+        "Laravel",
+        "Janus",
+        "Client"
+    ],
+    "require": {
+        "php": "^8.0.2|^8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/support": "^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "RTippin\\Janus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RTippin\\Janus\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RTippin\\Janus\\JanusServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
